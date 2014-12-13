@@ -1,7 +1,7 @@
 {
   "name": "object.map",
   "description": "Similar to map for arrays, this creates a new object by calling the callback on each property of the original object.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "homepage": "https://github.com/jonschlinkert/object.map",
   "author": {
     "name": "Jon Schlinkert",
@@ -14,12 +14,10 @@
   "bugs": {
     "url": "https://github.com/jonschlinkert/object.map/issues"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/jonschlinkert/object.map/blob/master/LICENSE-MIT"
-    }
-  ],
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/jonschlinkert/object.map/blob/master/LICENSE-MIT"
+  },
   "main": "index.js",
   "engines": {
     "node": ">=0.10.0"
@@ -27,16 +25,25 @@
   "scripts": {
     "test": "mocha -R spec"
   },
-  "devDependencies": {
-    "mocha": "*",
-    "should": "^4.0.4",
-    "verb": ">= 0.2.6"
-  },
-  "keywords": [
-
-  ],
   "dependencies": {
     "for-own": "^0.1.2",
-    "make-iterator": "^0.1.0"
-  }
+    "make-iterator": "^0.1.1"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "^4.4.0"
+  },
+  "keywords": [
+    "for-in",
+    "for-own",
+    "iterate",
+    "iterator",
+    "key",
+    "map",
+    "object",
+    "prop",
+    "properties",
+    "property",
+    "value"
+  ]
 }

@@ -9,3 +9,11 @@ test/actual
 tmp
 TODO.md
 vendor
+
+# npmignore
+.gitattributes
+.gitignore
+.jshintrc
+.verb*
+test
+test.js
