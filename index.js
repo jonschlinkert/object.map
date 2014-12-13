@@ -7,16 +7,15 @@
 
 'use strict';
 
-var makeIterator = require('make-iterator');
+var iterator = require('make-iterator');
 var forOwn = require('for-own');
 
-module.exports = function mapValues(obj, cb, thisArg) {
-  cb = makeIterator(cb, thisArg);
-
+module.exports = function objectMap(obj, cb, thisArg) {
+  cb = iterator(cb, thisArg);
   var o = {};
-  forOwn(obj, function (value, key, orig) {
-    o[key] = cb(value, key, orig);
-  });
 
+  forOwn(obj, function (val, key, orig) {
+    o[key] = cb(val, key, orig);
+  });
   return o;
 };
