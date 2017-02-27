@@ -1,8 +1,8 @@
 /*!
  * object.map <https://github.com/jonschlinkert/object.map>
  *
- * Copyright (c) 2014 Jon Schlinkert, contributors.
- * Licensed under the MIT license.
+ * Copyright (c) 2014, 2017, Jon Schlinkert.
+ * Released under the MIT License.
  */
 
 'use strict';
@@ -10,13 +10,13 @@
 var makeIterator = require('make-iterator');
 var forOwn = require('for-own');
 
-module.exports = function mapValues(obj, cb, thisArg) {
-  cb = makeIterator(cb, thisArg);
+module.exports = function(obj, fn, thisArg) {
+  var iterator = makeIterator(fn, thisArg);
+  var result = {};
 
-  var o = {};
-  forOwn(obj, function (value, key, orig) {
-    o[key] = cb(value, key, orig);
+  forOwn(obj, function(value, key, orig) {
+    result[key] = iterator(value, key, orig);
   });
 
-  return o;
+  return result;
 };
