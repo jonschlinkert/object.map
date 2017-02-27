@@ -3,40 +3,52 @@
   "description": "Similar to map for arrays, this creates a new object by calling the callback on each property of the original object.",
   "version": "0.1.0",
   "homepage": "https://github.com/jonschlinkert/object.map",
-  "author": {
-    "name": "Jon Schlinkert",
-    "url": "https://github.com/jonschlinkert"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/jonschlinkert/object.map.git"
-  },
+  "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "repository": "jonschlinkert/object.map",
   "bugs": {
     "url": "https://github.com/jonschlinkert/object.map/issues"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/jonschlinkert/object.map/blob/master/LICENSE-MIT"
-    }
+  "license": "MIT",
+  "files": [
+    "index.js"
   ],
   "main": "index.js",
   "engines": {
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "mocha -R spec"
-  },
-  "devDependencies": {
-    "mocha": "*",
-    "should": "^4.0.4",
-    "verb": ">= 0.2.6"
+    "test": "mocha"
   },
   "keywords": [
-
+    "map",
+    "object"
   ],
   "dependencies": {
-    "for-own": "^0.1.2",
-    "make-iterator": "^0.1.0"
+    "for-own": "^0.1.4",
+    "make-iterator": "^1.0.0"
+  },
+  "devDependencies": {
+    "gulp-format-md": "^0.1.11",
+    "mocha": "^3.2.0"
+  },
+  "verb": {
+    "toc": false,
+    "layout": "default",
+    "tasks": [
+      "readme"
+    ],
+    "plugins": [
+      "gulp-format-md"
+    ],
+    "related": {
+      "list": [
+        "collection-map",
+        "arr-map",
+        "array-each"
+      ]
+    },
+    "lint": {
+      "reflinks": true
+    }
   }
 }
