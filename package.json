@@ -1,7 +1,7 @@
 {
   "name": "object.map",
   "description": "Similar to map for arrays, this creates a new object by calling the callback on each property of the original object.",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "homepage": "https://github.com/jonschlinkert/object.map",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "repository": "jonschlinkert/object.map",
