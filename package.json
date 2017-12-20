@@ -24,7 +24,7 @@
     "object"
   ],
   "dependencies": {
-    "for-own": "^0.1.4",
+    "for-own": "^1.0.0",
     "make-iterator": "^1.0.0"
   },
   "devDependencies": {
